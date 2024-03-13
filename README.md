@@ -1,4 +1,4 @@
-# argocd-katas
+# argocd-katas2
 
 Exercise list in order:
 
