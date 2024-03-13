@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: student-2-quotes-flask # remember to change this!
+  name: student-2-quotes-flask-allalaalalal # remember to change this!
   namespace: argocd
 spec:
-  project: student-2-project # remember to change this to your project name!
+  project: student-2-project-lalalalala # remember to change this to your project name!
   source:
     repoURL: 'https://github.com/eficode-academy/argocd-katas.git'
     path: quotes-flask/k8s
     targetRevision: HEAD
   destination:
     server: 'https://kubernetes.default.svc'
-    namespace: student-2 # remember to change this to your namespace!
+    namespace: lalala-lalala-alalala # remember to change this to your namespace!
