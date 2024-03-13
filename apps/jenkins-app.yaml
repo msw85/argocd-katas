@@ -3,18 +3,15 @@ destination:
   server: 'https://kubernetes.default.svc'
   namespace: student-2
 syncPolicy:
-  automated: {}
+  automated:
+    prune: true
+    selfHeal: true
 sources:
   - repoURL: 'https://charts.bitnami.com/bitnami'
     targetRevision: 12.4.0
     helm:
-      parameters:
-        - name: jenkinsPassword
-          value: student
-        - name: service.type
-          value: NodePort
-        - name: persistence.enabled
-          value: 'false'
+      valueFiles:
+        - $values/jenkins/values.yaml
     chart: jenkins
   - repoURL: 'https://github.com/msw85/argocd-katas'
     targetRevision: main
