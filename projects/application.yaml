@@ -4,7 +4,7 @@ metadata:
   name: student-2-quotes-flask-allalaalalal # remember to change this!
   namespace: argocd
 spec:
-  project: student-2-project-lalalalala # remember to change this to your project name!
+  project: student-2-project # remember to change this to your project name!
   source:
     repoURL: 'https://github.com/eficode-academy/argocd-katas.git'
     path: quotes-flask/k8s
